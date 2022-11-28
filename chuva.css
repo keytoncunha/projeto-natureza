@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+    /*
+    www.dafont.com
+    Tipos de Format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+    */
+@font-face {
+    font-family: 'Papagaio';
+    src: url('fontes/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cor1: #042940;
+    --cor2: #005C53;
+    --cor3: #9FC131;
+    --cor4: #DBF227;
+    --font1: 'Papagaio', Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor4);
+    font-family: var(--font1);
+    font-size: 1em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    color: #fff;
+    text-align: center;
+}
+header>h1{
+    padding: 20px 30px 10px 30px;
+}
+header>p{
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    padding: 0px 15px 20px 15px;
+}
+
+section{
+    background-size: cover;
+    background-color: var(--cor4);
+    background-image: url('img/floresta.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 20px 1px 20px;
+}
+
+article{
+    background-color: #fff;
+    max-width: 750px;
+    margin: auto;
+    padding: 25px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 7px #00000053;
+}
+article>h1{
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor4);
+    font-size: 1.75em;
+    padding: 3px 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+article>p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+article > p > strong{
+    color: var(--cor2);
+}
+article > picture > img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/*Inicio do Responsivel do Vídeo*/
+article#nada{
+    padding: 0px;
+    max-width: 790px;
+}
+div#video{
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding-bottom: 60%;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 7px #00000053;
+}
+iframe{
+    position: absolute;
+    height: 88%;
+    top: 6%;
+    width: 94%;
+    left: 3%;
+    border-radius: 15px;
+}
+/*Fim do Responsivel do Vídeo*/
+
+footer{
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+footer > p > a{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-weight: 600;
+    text-decoration: none;
+}
+footer > p > a::after{
+    content: '\00A0\00A0\1F517';
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
